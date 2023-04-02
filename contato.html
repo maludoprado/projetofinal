@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+
+        <title>Mundo York</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar col-12 m-auto position-fixed navbar-expand-lg
+                navbar-light bg-light" style="z-index: 999;">
+                <div class="container-fluid col-11 m-auto">
+                    <a class="navbar-brand" href="index.html">York</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="sobre.html">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Fale
+                                    Conosco</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+                            </li>
+
+
+                        </ul>
+                        <form class="d-flex">
+                            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                            <!-- <a href="teste.html">teste</a> -->
+
+
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="p-5">
+            <article class="col-12">
+                <h3 class="text-left" style="font-size: 55px; margin-left:
+                    80px; margin-top: 30px;">Fale Conosco</h3>
+
+                <form class="needs-validation" action="#" method="post"
+                    novalidate>
+                    <div class="form-row">
+                        <label for="validationCustom01" class="col-sm-2
+                            col-form-label col-form-label">Nome do Pet*</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control
+                                form-control-sm" id="validationCustom01"
+                                placeholder="Nome" required />
+                            <div class="invalid-feedback">
+                                Campo nome obrigatório.
+                            </div>
+                            <div class="valid-feedback">
+                                Tudo ok.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="validationCustom02" class="col-sm-2
+                            col-form-label col-form-label">Idade do Pet*</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control
+                                form-control-sm" id="validationCustom02"
+                                placeholder="Idade do Pet" required />
+                            <div class="invalid-feedback">
+                                Campo Idade do Pet obrigatório.
+                            </div>
+                            <div class="valid-feedback">
+                                Tudo ok.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="validationCustom03" class="col-sm-2
+                            col-form-label col-form-label">E-mail*</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control
+                                form-control-sm" id="validationCustom03"
+                                placeholder="E-mail" required />
+                            <div class="invalid-feedback">
+                                Campo E-mail obrigatório.
+                            </div>
+                            <div class="valid-feedback">
+                                Tudo ok.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="validationCustom04" class="col-sm-2
+                            col-form-label col-form-label">Nos conte mais sobre seu Pet*</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control form-control-sm"
+                                id="validationCustom04" required></textarea>
+                            <div class="invalid-feedback">
+                                Mensagem obrigatória.
+                            </div>
+                            <div class="valid-feedback">
+                                Tudo ok.
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary
+                        my-1float-left">Enviar</button>
+                    <p style="color: rgb(133, 133, 133); font-size: 16px;">*Campos
+                        Obrigatórios</p>
+                </form>
+            </article>
+
+            <footer class="row">
+                <div class="col-12">
+                    <p>Copyright © 2023</p>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                
+                var forms = document.getElementsByClassName('needs-validation');
+                
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+        </script>
+        <noscript>Atualize seu navegador</noscript>
+
+
+
+    </body>
+</html>
